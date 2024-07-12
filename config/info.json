@@ -1,0 +1,80 @@
+{
+    "id": "doxology",
+    "name": "doxology",
+    "layouts": {
+      "default_layout": {
+        "name": "default_layout",
+        "layout": [
+          { "label": "TAB", "row": 0, "col": 0, "x": 0, "y": 0.36 },
+          { "label": "Q", "row": 0, "col": 1, "x": 1, "y": 0.36 },
+          { "label": "W", "row": 0, "col": 2, "x": 2, "y": 0.11 },
+          { "label": "E", "row": 0, "col": 3, "x": 3, "y": -0.015 },
+          { "label": "R", "row": 0, "col": 4, "x": 4, "y": 0.11 },
+          { "label": "T", "row": 0, "col": 5, "x": 5, "y": 0.235 },
+          { "label": "Y", "row": 0, "col": 9, "x": 9, "y": 0.235 },
+          { "label": "U", "row": 0, "col": 10, "x": 10, "y": 0.11 },
+          { "label": "I", "row": 0, "col": 11, "x": 11, "y": -0.015 },
+          { "label": "O", "row": 0, "col": 12, "x": 12, "y": 0.11 },
+          { "label": "P", "row": 0, "col": 13, "x": 13, "y": 0.36 },
+          { "label": "Å", "row": 0, "col": 14, "x": 14, "y": 0.36 },
+  
+          { "label": "BSP", "row": 1, "col": 0, "x": 0, "y": 1.36 },
+          { "label": "A", "row": 1, "col": 1, "x": 1, "y": 1.36 },
+          { "label": "S", "row": 1, "col": 2, "x": 2, "y": 1.11 },
+          { "label": "D", "row": 1, "col": 3, "x": 3, "y": 0.985 },
+          { "label": "F", "row": 1, "col": 4, "x": 4, "y": 1.11 },
+          { "label": "G", "row": 1, "col": 5, "x": 5, "y": 1.235 },
+          { "label": "H", "row": 1, "col": 9, "x": 9, "y": 1.235 },
+          { "label": "J", "row": 1, "col": 10, "x": 10, "y": 1.11 },
+          { "label": "K", "row": 1, "col": 11, "x": 11, "y": 0.985 },
+          { "label": "L", "row": 1, "col": 12, "x": 12, "y": 1.11 },
+          { "label": "Ö", "row": 1, "col": 13, "x": 13, "y": 1.36 },
+          { "label": "Ä", "row": 1, "col": 14, "x": 14, "y": 1.36 },
+  
+          { "label": "CMD", "row": 2, "col": 0, "x": 0, "y": 2.36 },
+          { "label": "Z", "row": 2, "col": 1, "x": 1, "y": 2.36 },
+          { "label": "X", "row": 2, "col": 2, "x": 2, "y": 2.11 },
+          { "label": "C", "row": 2, "col": 3, "x": 3, "y": 1.985 },
+          { "label": "V", "row": 2, "col": 4, "x": 4, "y": 2.11 },
+          { "label": "B", "row": 2, "col": 5, "x": 5, "y": 2.235 },
+          { "label": "N", "row": 2, "col": 9, "x": 9, "y": 2.235 },
+          { "label": "M", "row": 2, "col": 10, "x": 10, "y": 2.11 },
+          { "label": ",", "row": 2, "col": 11, "x": 11, "y": 1.985 },
+          { "label": ".", "row": 2, "col": 12, "x": 12, "y": 2.11 },
+          { "label": "-", "row": 2, "col": 13, "x": 13, "y": 2.36 },
+          { "label": "`", "row": 2, "col": 14, "x": 14, "y": 2.36 },
+  
+
+          { "label": "X", "row": 3, "col": 2, "x": 2, "y": 3.11 },
+          { "label": "C", "row": 3, "col": 3, "x": 3, "y": 2.985 },
+
+
+          { "label": "V", "row": 4, "col": 4, "x": 4, "y": 4.235 },
+          { "label": "B", "row": 4, "col": 5, "x": 5, "y": 4.235 },
+          { "label": "N", "row": 4, "col": 6, "x": 6, "y": 4.235 },
+
+
+
+          { "label": "V", "row": 4, "col": 8, "x": 8, "y": 4.235 },
+          { "label": "B", "row": 4, "col": 9, "x": 9, "y": 4.235 },
+          { "label": "N", "row": 4, "col": 10, "x": 10, "y": 4.235 },
+
+          { "label": "V", "row": 5, "col": 4, "x": 4, "y": 5.235 },
+          { "label": "B", "row": 5, "col": 5, "x": 5, "y": 5.235 },
+
+          { "label": "V", "row": 5, "col": 9, "x": 9, "y": 5.235 },
+          { "label": "B", "row": 5, "col": 10, "x": 10, "y": 5.235 }
+        ]
+      }
+    },
+    "sensors": [
+      {
+        "ref": "left_encoder",
+        "name": "encoder_left",
+        "identifier": "encoder_left",
+        "compatible": "alps,ec11",
+        "label": "LEFT_ENCODER",
+        "enabled": false
+      }
+    ]
+  }
