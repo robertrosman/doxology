@@ -37,6 +37,11 @@ Once the files were generated I opened them in Fusion 360 to add the trackball m
 3d-printed the cases.
 
 
+## Edit keymap
+
+I've created the base layout with the genius tool https://nickcoutsos.github.io/keymap-editor. Just login with your github account and select the doxology repo, then you're ready to go. When you're done with the changes, just save and commit. Github actions will take over and create a new firmware artifact to download. Connect a usb cable, press all keys on the thumbcluster to enter flashing mode, then just place the firmware on the usb drive that appears.
+
+
 ## Trackball
 
 I've never understood trackballs. Why would anyone give up the precision and comfort of a proper mouse, to use a clumpsy trackball instead? On the other hand I've always wanted to reduce the hand movements between keyboard and mouse. I've tried to reduce it by using vim, rely more on keyboard shortcuts, and even tried to use keyboard buttons to move cursor. Finally the pieces came together when I realized that a trackball integrated into the keyboard, always within reach without having to reposition my right hand would solve it. That said, I'll probably be using it as a complement to my ordinary mouse.
