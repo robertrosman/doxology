@@ -2,7 +2,7 @@ file_format: "1"
 id: doxology
 name: Doxology
 type: shield
-url: https://github.com/robertrosman/zmk-config
+url: https://github.com/robertrosman/doxology
 requires: [nice_nano_v2]
 features:
   - keys
