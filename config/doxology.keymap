@@ -9,18 +9,6 @@
 #include <dt-bindings/zmk/mouse.h>
 
 / {
-    // TODO: use a custom behavior for connect layer. hold button to activate connect layer, tap to send keypress. use like `&mo_tap CONNECT END`
-    // See the last example here: https://zmk.dev/docs/behaviors/hold-tap#example-use-cases
-    // behaviors {
-    // mo_tap: behavior_mo_tap {
-    // compatible = "zmk,behavior-hold-tap";
-    // #binding-cells = <2>;
-    // flavor = "hold-preferred";
-    // tapping-term-ms = <200>;
-    // bindings = <&mo>, <&kp>;
-    // };
-    // };
-
     // combos {
     //     compatible = "zmk,combos";
 
