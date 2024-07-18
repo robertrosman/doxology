@@ -5,13 +5,15 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "trackball.dtsi"
+// #include "trackball.dtsi"
 
 / {
+  /*
   trackball_listener {
     compatible = "zmk,input-listener";
     device = <&trackball>;
   };
+  */
    
     chosen {
         zmk,kscan = &kscan0;
@@ -70,6 +72,8 @@
 
 };
 
+/*
 &trackball {
     status = "okay";
 };
+*/
