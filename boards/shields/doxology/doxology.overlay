@@ -8,12 +8,10 @@
 #include "trackball.dtsi"
 
 / {
-  /*
-  trackball_listener {
-    compatible = "zmk,input-listener";
-    device = <&trackball>;
-  };
-  */
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+    };
    
     chosen {
         zmk,kscan = &kscan0;
@@ -71,9 +69,3 @@
     };
 
 };
-
-/*
-&trackball {
-    status = "okay";
-};
-*/
