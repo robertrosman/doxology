@@ -27,8 +27,8 @@
             /* the input point device alias */
             device = <&trackball>;
 
-            /* only enable in default layer (DEF) & mouse key layer */
-            layers = <DEF MSK>;
+            /* only enable in mouse key layer */
+            layers = <4>;
 
             /* event code value to override raw input event */
             /* designed for switching to mouse scroll, xy-swap, precise-mode+, etc */
@@ -40,7 +40,7 @@
             scale-divisor = <1>;
 
             /* bind a behavior to auto activate MSK layer for &mkp */
-            bindings = <&ib_tog_layer 4>;
+            /* bindings = <&ib_tog_layer 4>; */
 
             /* align to CCW 45 degree */
             /* rotate-deg = <315>; */
