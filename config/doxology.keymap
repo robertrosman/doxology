@@ -102,7 +102,7 @@
         default_layer {
             bindings = <
 &kp TAB        &kp Q    &kp W             &lt 5 E       &kp R      &kp T                                                   &kp Y          &kp U                 &kp I      &kp O       &kp P       &kp SE_ARNG
-&kp BACKSPACE  &lt 4 A  &kp S             &kp D         &kp F      &kp G                                                   &kp H          &kp J                 &kp K      &kp L       &kp SE_ODIA &kp SE_ADIA
+&kp BACKSPACE  &lt 4 A  &kp S             &kp D         &kp F      &kp G                                                   &kp H          &kp J                 &kp K      &kp L       &kp SE_OUML &kp SE_AUML
 &kp LCTRL      &kp Z    &kp X             &kp C         &kp V      &kp B                                                   &kp N          &kp M                 &kp COMMA  &kp PERIOD  &kp MINUS   &kp MINUS 
                         &kp LEFT_COMMAND  &kp LEFT_ALT
                                                         &lt 1 ESC  &sk LEFT_SHIFT  &mt LCTRL RG(ENTER)    &lt 2 BACKSPACE  &kp SPACE      &sl 3
