@@ -69,3 +69,6 @@ PMW3610 Data sheet
 https://www.epsglobal.com/Media-Library/EPSGlobal/Products/files/pixart/PMW3610DM-SUDU.pdf?ext=.pdf
 
 
+## Swedish layout / localization
+
+I've copied the key codes from qmk: https://github.com/qmk/qmk_firmware/blob/master/quantum/keymap_extras/keymap_swedish.h as per this github issue comment: https://github.com/zmkfirmware/zmk/issues/177#issuecomment-2107471861
