@@ -41,6 +41,10 @@ Once the files were generated I opened them in Fusion 360 to add the trackball m
 
 I've created the base layout with the genius tool https://nickcoutsos.github.io/keymap-editor. Just login with your github account and select the doxology repo, then you're ready to go. When you're done with the changes, just save and commit. Github actions will take over and create a new firmware artifact to download. Connect a usb cable, press all keys on the thumbcluster to enter flashing mode, then just place the firmware on the usb drive that appears.
 
+### Swedish layout / localization
+
+I've added keymap_swedish.h with inspiration from this github issue comment: https://github.com/zmkfirmware/zmk/issues/177#issuecomment-2107471861. Note that the swedish keycodes are not working with the keymap editor, so they must be edited manually. The keymap editor should preserve the swedish bindings though, so you should be able to use it to edit other keycodes, just ignore the warnings for the keys that are using swedish keycodes.
+
 
 ## Trackball
 
@@ -68,7 +72,3 @@ https://github.com/Sigvah/cnano-dongle/blob/main/config/charybdis.keymap
 PMW3610 Data sheet
 https://www.epsglobal.com/Media-Library/EPSGlobal/Products/files/pixart/PMW3610DM-SUDU.pdf?ext=.pdf
 
-
-## Swedish layout / localization
-
-I've copied the key codes from qmk: https://github.com/qmk/qmk_firmware/blob/master/quantum/keymap_extras/keymap_swedish.h as per this github issue comment: https://github.com/zmkfirmware/zmk/issues/177#issuecomment-2107471861
