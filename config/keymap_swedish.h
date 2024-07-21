@@ -23,7 +23,7 @@
 #define SE_LEFT_PAREN        LS(NUMBER_8)           // (
 #define SE_RIGHT_PAREN       LS(NUMBER_9)           // )
 #define SE_EQUAL             LS(NUMBER_0)           // =
-#define SE_QUESTION          LS(SE_PLUS)            // ?
+#define SE_QUESTION          LS(MINUS)              // ?
 #define SE_GRAVE             LS(SE_ACUTE)           // ` (dead)
 #define SE_CIRC              LS(SE_DIAE)            // ^ (dead)
 #define SE_ASTERISK          LS(SE_SINGLE_QUOTE)    // *
