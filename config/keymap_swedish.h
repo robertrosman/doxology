@@ -1,4 +1,5 @@
 #pragma once
+#include <dt-bindings/zmk/modifiers.h>
 #include <dt-bindings/zmk/keys.h>
 
 // Aliases
