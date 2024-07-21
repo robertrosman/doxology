@@ -15,7 +15,7 @@
 #define SE_MINUS             SLASH                  // -
 #define SE_HALF              LS(SE_SECT)            // ½
 #define SE_EXCLAMATION       LS(NUMBER_1)           // !
-#define SE_DOUBLE_QUOTE      LS(NUMBER_2)           // "
+#define SE_DOUBLE_QUOTES     LS(NUMBER_2)           // "
 #define SE_HASH              LS(NUMBER_3)           // #
 #define SE_CURR              LS(NUMBER_4)           // ¤
 #define SE_PERCENT           LS(NUMBER_5)           // %
