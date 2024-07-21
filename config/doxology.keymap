@@ -139,12 +139,12 @@
 
         symbols {
             bindings = <
-&kp SE_LESS_THAN        &kp SE_EXCLAMATION   &kp SE_DOUBLE_QUOTES  &kp SE_HASH         &kp SE_QUESTION   &kp SE_PERCENT                    &trans                &kp SE_PIPE   &kp SE_LEFT_PAREN  &kp SE_RIGHT_PAREN     &kp SE_EQUAL        &kp SE_QUESTION
-&trans        &kp SE_SINGLE_QUOTE  &kp SE_AT             &kp CARET        &kp SE_DOLLAR     &kp CARET                      &kp SE_AMPERSAND              &kp SE_LEFT_BRACE   &kp SE_LEFT_BRACKET              &kp SE_RIGHT_BRACKET         &kp SE_RIGHT_BRACE  &kp NON_US_BACKSLASH
-&kp SE_PIPE  &kp PLUS          &kp MINUS          &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp SE_TILDE                      &kp SE_BACKSLASH &kp SE_GRAVE   &kp SE_LESS_THAN  &kp SE_GREATER_THAN  &kp LA(EQUAL)    &kp SE_GRAVE
-                                &trans             &trans
-                                                                    &trans         &trans       &trans    &trans  &trans                &trans
-                                                                    &trans         &trans                         &trans                &trans
+&kp SE_LESS_THAN        &kp SE_EXCLAMATION    &kp SE_DOUBLE_QUOTES  &kp SE_HASH         &kp SE_QUESTION   &kp SE_PERCENT                               &trans                &kp SE_PIPE         &kp SE_LEFT_PAREN       &kp SE_RIGHT_PAREN       &kp SE_EQUAL         &kp SE_QUESTION
+&trans                  &kp SE_SINGLE_QUOTE   &kp SE_AT             &kp CARET           &kp SE_DOLLAR     &kp CARET                                    &kp SE_AMPERSAND      &kp SE_LEFT_BRACE   &kp SE_LEFT_BRACKET     &kp SE_RIGHT_BRACKET     &kp SE_RIGHT_BRACE   &kp NON_US_BACKSLASH
+&kp SE_PIPE             &kp PLUS              &kp MINUS             &kp KP_MULTIPLY     &kp KP_DIVIDE     &kp SE_TILDE                                 &kp SE_BACKSLASH      &kp SE_GRAVE        &kp SE_LESS_THAN        &kp SE_GREATER_THAN      &kp SE_EQUAL         &kp SE_GRAVE
+                                              &trans                &trans
+                                                                                        &trans              &trans            &trans        &trans     &trans                &trans
+                                                                                        &trans              &trans                                     &trans                &trans
             >;
         };
 
