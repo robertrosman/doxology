@@ -106,67 +106,67 @@
 
         default_layer {
             bindings = <
-&kp TAB        &kp Q    &kp W             &lt 5 E       &kp R      &kp T                                                   &kp Y          &kp U                 &kp I      &kp O       &kp P        &kp SE_ARNG
-&kp BACKSPACE  &lt 4 A  &kp S             &lt 5 D       &kp F      &kp G                                                   &kp H          &kp J                 &kp K      &kp L       &kp SE_OUML  &kp SE_AUML
-&kp LCTRL      &kp Z    &kp X             &kp C         &kp V      &kp B                                                   &kp N          &kp M                 &kp COMMA  &kp PERIOD  &kp MINUS    &kp MINUS
-                        &kp LEFT_COMMAND  &kp LEFT_ALT
-                                                        &lt 1 ESC  &sk LEFT_SHIFT  &mt LCTRL RG(ENTER)    &lt 2 BACKSPACE  &kp SPACE      &sl 3
-                                                        &mo 4      &kp LCMD                                                &kp RIGHT_ALT  &kp LS(LA(LC(LCMD)))
+&none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &none
+                &none  &none
+                                &none  &none  &none    &none  &none  &none
+                                &none  &none                    &none  &none
             >;
         };
 
         numbers {
             bindings = <
-&kp LA(TAB)      &kp F1  &kp F2   &kp F3   &kp F4   &trans                             &kp COMMA        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &trans
-&kp LA(LS(TAB))  &kp F5  &kp F6   &kp F7   &kp F8   &kp PAUSE_BREAK                    &kp DOT          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans
-&trans           &kp F9  &kp F10  &kp F11  &kp F12  &kp SYSREQ                         &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans
-                         &trans   &trans
-                                           &trans   &trans           &trans    &trans  &trans           &kp KP_NUMBER_0
-                                           &trans   &trans                             &trans           &trans
+&none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &none
+                &none  &none
+                                &none  &none  &none    &none  &none  &none
+                                &none  &none                    &none  &none
             >;
         };
 
         navigation {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp C_AC_SCROLL_UP    &kp HOME  &kp UP    &kp END    &kp PAGE_UP    &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp C_AC_SCROLL_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans                &trans    &trans    &trans     &trans         &trans
-                &trans  &trans
-                                &trans  &trans  &trans    &trans  &trans                &trans
-                                &trans  &trans                    &trans                &trans
+&none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &none
+                &none  &none
+                                &none  &none  &none    &none  &none  &none
+                                &none  &none                    &none  &none
             >;
         };
 
         symbols {
             bindings = <
-&kp SE_LESS_THAN        &kp SE_EXCLAMATION    &kp SE_DOUBLE_QUOTES  &kp SE_HASH         &kp SE_QUESTION   &kp SE_PERCENT                               &trans                &kp SE_PIPE         &kp SE_LEFT_PAREN       &kp SE_RIGHT_PAREN       &kp SE_EQUAL         &kp SE_QUESTION
-&trans                  &kp SE_SINGLE_QUOTE   &kp SE_AT             &kp CARET           &kp SE_DOLLAR     &kp CARET                                    &kp SE_AMPERSAND      &kp SE_LEFT_BRACE   &kp SE_LEFT_BRACKET     &kp SE_RIGHT_BRACKET     &kp SE_RIGHT_BRACE   &kp NON_US_BACKSLASH
-&kp SE_PIPE             &kp PLUS              &kp MINUS             &kp KP_MULTIPLY     &kp KP_DIVIDE     &kp SE_TILDE                                 &kp SE_BACKSLASH      &kp SE_GRAVE        &kp SE_LESS_THAN        &kp SE_GREATER_THAN      &kp SE_EQUAL         &kp SE_GRAVE
-                                              &trans                &trans
-                                                                                        &trans              &trans            &trans        &trans     &trans                &trans
-                                                                                        &trans              &trans                                     &trans                &trans
+&none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &none
+                &none  &none
+                                &none  &none  &none    &none  &none  &none
+                                &none  &none                    &none  &none
             >;
         };
 
         pointer {
             bindings = <
-&trans  &trans  &trans     &trans    &trans     &kp C_AC_SCROLL_UP                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &mkp RCLK  &mkp MB3  &mkp LCLK  &kp C_AC_SCROLL_DOWN                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans    &trans     &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans     &trans
-                                     &trans     &trans                &trans    &trans  &trans  &trans
-                                     &trans     &trans                                  &trans  &trans
+&none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &none
+                &none  &none
+                                &none  &none  &none    &none  &none  &none
+                                &none  &none                    &none  &none
             >;
         };
 
         pointer_scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans
-                                &trans  &trans  &trans    &trans  &trans  &trans
-                                &trans  &trans                    &trans  &trans
+&none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &none
+                &none  &none
+                                &none  &none  &none    &none  &none  &none
+                                &none  &none                    &none  &none
             >;
         };
     };
