@@ -103,7 +103,7 @@
 &kp LCTRL      &kp Z    &kp X             &kp C         &kp V      &kp B                                                   &kp N          &kp M                 &kp COMMA  &kp PERIOD  &kp MINUS    &kp MINUS
                         &kp LEFT_COMMAND  &kp LEFT_ALT
                                                         &lt 1 ESC  &sk LEFT_SHIFT  &mt LCTRL RG(ENTER)    &lt 2 BACKSPACE  &kp SPACE      &sl 3
-                                                        &mo 4      &kp LCMD                                                &kp RIGHT_ALT  &kp LS(LA(LC(LCMD)))
+                                                        &mo 4      &bootloader                                             &kp RIGHT_ALT  &kp LS(LA(LC(LCMD)))
             >;
         };
 
