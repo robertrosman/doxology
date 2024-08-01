@@ -41,9 +41,6 @@
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
 
-        /* Not really sure why we have to invert y to get it right */
-        y-invert;
-
         scale-multiplier = <1>;
         scale-divisor = <1>;
 
