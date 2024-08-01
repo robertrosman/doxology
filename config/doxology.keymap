@@ -31,7 +31,7 @@
 
         /* only enable in mouse key layer */
 
-        layers = <4>;
+        layers = <0 4>;
 
         /* event code value to override raw input event */
         /* designed for switching to mouse scroll, xy-swap, precise-mode+, etc */
