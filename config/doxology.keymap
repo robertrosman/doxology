@@ -38,8 +38,8 @@
         /* NOTE: only apply input-code overriding for INPUT_EV_REL */
 
         evt-type = <INPUT_EV_REL>;
-        x-input-code = <INPUT_REL_Y>;
-        y-input-code = <INPUT_REL_X>;
+        x-input-code = <INPUT_REL_X>;
+        y-input-code = <INPUT_REL_Y>;
 
         scale-multiplier = <1>;
         scale-divisor = <1>;
@@ -63,12 +63,13 @@
 
         /* slienting x-axis with alt event code */
 
-        x-input-code = <INPUT_REL_MISC>;
+        x-input-code = <INPUT_REL_HWHEEL>;
         y-input-code = <INPUT_REL_WHEEL>;
 
         /* invert scrolling direction */
 
         y-invert;
+        scale-divisor = <16>;
 
         /* align to CCW 45 degree */
         /* rotate-deg = <315>; */
