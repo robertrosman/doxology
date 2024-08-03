@@ -69,29 +69,28 @@
         /* invert scrolling direction */
 
         y-invert;
-        scale-divisor = <16>;
 
         /* align to CCW 45 degree */
         /* rotate-deg = <315>; */
         /* NOTE 1: This settings do not compitable with y-invert and x-invert */
         /* NOTE 2: Floating point computation requires alot of ram. */
         /*         This feature will cuase stackove flow with CONFIG_ZMK_USB_LOGGING=y */
-        /* bind a behavior to down scaling input value to (1/1) */
+        /* bind a behavior to down scaling input value to (1/64) */
         /* NOTE: This behavior is different to scale-divisor. */
         /*       The delta value is accumlated until result >= 1 after cast. */
         /*       The scrolling is preented in hi-res and allow precise scrolling */
 
-        // bindings = <&ib_wheel_scaler 1 1>;
+        bindings = <&ib_wheel_scaler 1 64>;
     };
 
     /* define a resolution down scaler only for INPUT_REL_WHEEL */
 
-    //ib_wheel_scaler: ib_wheel_scaler {
-        //compatible = "zmk,input-behavior-scaler";
-        //#binding-cells = <2>;
-        //evt-type = <INPUT_EV_REL>;
-        //input-code = <INPUT_REL_WHEEL>;
-    //};
+    ib_wheel_scaler: ib_wheel_scaler {
+        compatible = "zmk,input-behavior-scaler";
+        #binding-cells = <2>;
+        evt-type = <INPUT_EV_REL>;
+        input-code = <INPUT_REL_WHEEL>;
+    };
 
     /* END input behaviour for trackball */
 
