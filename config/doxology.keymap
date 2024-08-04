@@ -103,7 +103,7 @@
 &kp BACKSPACE  &kp A    &kp S             &lt 5 D       &kp F      &kp G                                                   &kp H          &kp J                 &kp K      &kp L       &kp SE_OUML  &kp SE_AUML
 &kp LCTRL      &kp Z    &kp X             &kp C         &kp V      &kp B                                                   &kp N          &kp M                 &kp COMMA  &kp PERIOD  &kp MINUS    &kp MINUS
                         &kp LEFT_COMMAND  &kp LEFT_ALT
-                                                        &lt 1 ESC  &sk LEFT_SHIFT  &mt LCTRL RG(ENTER)    &lt 2 BACKSPACE  &kp SPACE      &sl 3
+                                                        &lt 1 ESC  &sk LEFT_SHIFT  &mt LCTRL ENTER    &lt 2 BACKSPACE  &kp SPACE      &sl 3
                                                         &mo 4      &bootloader                                             &kp RIGHT_ALT  &kp LS(LA(LC(LCMD)))
             >;
         };
