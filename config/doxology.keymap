@@ -75,12 +75,12 @@
         /* NOTE 1: This settings do not compitable with y-invert and x-invert */
         /* NOTE 2: Floating point computation requires alot of ram. */
         /*         This feature will cuase stackove flow with CONFIG_ZMK_USB_LOGGING=y */
-        /* bind a behavior to down scaling input value to (1/16) */
+        /* bind a behavior to down scaling input value to (1/1024) */
         /* NOTE: This behavior is different to scale-divisor. */
         /*       The delta value is accumlated until result >= 1 after cast. */
         /*       The scrolling is preented in hi-res and allow precise scrolling */
 
-        bindings = <&ib_wheel_scaler 1 16>;
+        bindings = <&ib_wheel_scaler 1 1024>;
     };
 
     /* define a resolution down scaler only for INPUT_REL_WHEEL */
