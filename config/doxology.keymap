@@ -101,10 +101,10 @@
             bindings = <
 &kp TAB        &kp Q    &kp W             &lt 5 E       &kp R      &kp T                                                   &kp Y          &kp U                 &kp I      &kp O       &kp P        &kp SE_ARNG
 &kp BACKSPACE  &kp A    &kp S             &lt 5 D       &kp F      &kp G                                                   &kp H          &kp J                 &kp K      &kp L       &kp SE_OUML  &kp SE_AUML
-&kp LCTRL      &kp Z    &kp X             &kp C         &kp V      &kp B                                                   &kp N          &kp M                 &kp COMMA  &kp PERIOD  &kp MINUS    &kp MINUS
+&kp LCTRL      &kp Z    &kp X             &kp C         &kp V      &kp B                                                   &kp N          &kp M                 &kp COMMA  &kp PERIOD  &kp SE_MINUS &kp SE_MINUS
                         &kp LEFT_COMMAND  &kp LEFT_ALT
                                                         &lt 1 ESC  &sk LEFT_SHIFT  &mt LCTRL ENTER    &lt 2 BACKSPACE  &kp SPACE      &sl 3
-                                                        &mo 4      &bootloader                                             &kp RIGHT_ALT  &kp LS(LA(LC(LCMD)))
+                                                        &mo 4      &sys_reset                                             &kp RIGHT_ALT  &kp LS(LA(LC(LCMD)))
             >;
         };
 
@@ -132,9 +132,9 @@
 
         symbols {
             bindings = <
-&kp SE_LESS_THAN        &kp SE_EXCLAMATION    &kp SE_DOUBLE_QUOTES  &kp SE_HASH         &kp SE_QUESTION   &kp SE_PERCENT                               &trans                &kp SE_PIPE         &kp SE_LEFT_PAREN       &kp SE_RIGHT_PAREN       &kp SE_EQUAL         &kp SE_QUESTION
-&trans                  &kp SE_SINGLE_QUOTE   &kp SE_AT             &kp CARET           &kp SE_DOLLAR     &kp CARET                                    &kp SE_AMPERSAND      &kp SE_LEFT_BRACE   &kp SE_LEFT_BRACKET     &kp SE_RIGHT_BRACKET     &kp SE_RIGHT_BRACE   &kp NON_US_BACKSLASH
-&kp SE_PIPE             &kp PLUS              &kp MINUS             &kp KP_MULTIPLY     &kp KP_DIVIDE     &kp SE_TILDE                                 &kp SE_BACKSLASH      &kp SE_GRAVE        &kp SE_LESS_THAN        &kp SE_GREATER_THAN      &kp SE_EQUAL         &kp SE_GRAVE
+&kp SE_LESS_THAN        &kp SE_EXCLAMATION    &kp SE_DOUBLE_QUOTES  &kp SE_HASH         &kp SE_QUESTION   &kp SE_PERCENT                               &trans                &kp RA(U)           &kp SE_LEFT_PAREN       &kp SE_RIGHT_PAREN       &kp SE_EQUAL         &kp SE_QUESTION
+&trans                  &kp SE_SINGLE_QUOTE   &kp SE_AT             &kp RA(G)           &kp SE_DOLLAR     &kp RA(G)                                    &kp SE_AMPERSAND      &kp SE_LEFT_BRACE   &kp SE_LEFT_BRACKET     &kp SE_RIGHT_BRACKET     &kp SE_RIGHT_BRACE   &kp NON_US_BACKSLASH
+&kp RA(U)               &kp SE_PLUS           &kp SE_MINUS          &kp KP_MULTIPLY     &kp KP_DIVIDE     &kp SE_TILDE                                 &kp SE_BACKSLASH      &kp SE_GRAVE        &kp SE_LESS_THAN        &kp SE_GREATER_THAN      &kp SE_EQUAL         &kp SE_GRAVE
                                               &trans                &trans
                                                                                         &trans              &trans            &trans        &trans     &trans                &trans
                                                                                         &trans              &trans                                     &trans                &trans
@@ -148,7 +148,7 @@
 &trans  &trans  &trans     &trans    &trans     &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans     &trans
                                      &trans     &trans                &trans    &trans  &trans  &trans
-                                     &trans     &sys_reset                              &trans  &trans
+                                     &trans     &bootloader                             &trans  &trans
             >;
         };
 
