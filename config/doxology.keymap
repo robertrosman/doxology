@@ -66,6 +66,10 @@
         x-input-code = <INPUT_REL_HWHEEL>;
         y-input-code = <INPUT_REL_WHEEL>;
 
+        /* invert scrolling direction */
+
+        y-invert;
+
         /* align to CCW 45 degree */
         /* rotate-deg = <315>; */
         /* NOTE 1: This settings do not compitable with y-invert and x-invert */
