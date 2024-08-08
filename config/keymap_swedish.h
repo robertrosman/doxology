@@ -9,7 +9,7 @@
 #define SE_ARNG              LEFT_BRACKET           // Å
 #define SE_DIAE              RIGHT_BRACKET          // ¨ (dead)
 #define SE_OUML              SEMICOLON              // Ö
-#define SE_AUML              SINGLE_QUOTES          // Ä
+#define SE_AUML              SINGLE_QUOTE           // Ä
 #define SE_SINGLE_QUOTE      NON_US_HASH            // '
 #define SE_LESS_THAN         NON_US_BACKSLASH       // <
 #define SE_MINUS             SLASH                  // -
