@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/petejohanson
     - name: badjeff
       url-base: https://github.com/badjeff
+    - name: robertrosman
+      url-base: https://github.com/robertrosman
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -13,7 +15,7 @@ manifest:
       remote: badjeff
       revision: main
     - name: zmk-input-behavior-listener
-      remote: badjeff
+      remote: robertrosman
       revision: main
   self:
     path: config
