@@ -63,7 +63,7 @@
 
         /* slienting x-axis with alt event code */
 
-        x-input-code = <INPUT_REL_HWHEEL>;
+        x-input-code = <INPUT_REL_MISC>;
         y-input-code = <INPUT_REL_WHEEL>;
 
         /* invert scrolling direction */
@@ -80,7 +80,7 @@
         /*       The delta value is accumlated until result >= 1 after cast. */
         /*       The scrolling is preented in hi-res and allow precise scrolling */
 
-        bindings = <&ib_wheel_scaler 1 1024>;
+        bindings = <&ib_wheel_scaler 1 50>;
     };
 
     /* define a resolution down scaler only for INPUT_REL_WHEEL */
