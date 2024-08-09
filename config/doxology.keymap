@@ -31,7 +31,7 @@
 
         /* only enable in mouse key layer */
 
-        layers = <0 4>;
+        layers = <0 1>;
 
         /* event code value to override raw input event */
         /* designed for switching to mouse scroll, xy-swap, precise-mode+, etc */
@@ -57,8 +57,10 @@
     tb0_msl_ibl {
         compatible = "zmk,input-behavior-listener";
         device = <&trackball>;
-        layers = <5>;
+        layers = <4>;
         evt-type = <INPUT_EV_REL>;
+        scale-multiplier = <1>;
+        scale-divisor = <8>;
 
         /* slienting x-axis with alt event code */
 
@@ -109,12 +111,12 @@
 
         numbers {
             bindings = <
-&kp LA(TAB)      &kp F1  &kp F2   &kp F3   &kp F4   &trans                             &kp COMMA        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &trans
-&kp LA(LS(TAB))  &kp F5  &kp F6   &kp F7   &kp F8   &kp PAUSE_BREAK                    &kp DOT          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans
-&trans           &kp F9  &kp F10  &kp F11  &kp F12  &kp SYSREQ                         &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans
-                         &trans   &trans
-                                           &trans   &trans           &trans    &trans  &trans           &kp KP_NUMBER_0
-                                           &trans   &trans                             &trans           &trans
+&kp LA(TAB)      &trans         &trans            &trans    &trans     &trans                             &kp COMMA        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &trans
+&kp LA(LS(TAB))  &trans         &mkp RCLK         &mkp MB3  &mkp LCLK  &kp PAUSE_BREAK                    &kp DOT          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans
+&trans           &kp C_AC_BACK  &kp C_AC_FORWARD  &mo 4     &trans     &kp SYSREQ                         &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans
+                                &trans            &trans
+                                                            &trans     &trans            &trans   &trans  &trans           &kp KP_NUMBER_0
+                                                            &trans     &bootloader                        &trans           &trans
             >;
         };
 
@@ -137,17 +139,6 @@
                                        &trans                &trans
                                                                               &trans           &trans          &trans    &trans  &trans            &trans
                                                                               &trans           &trans                            &trans            &trans
-            >;
-        };
-
-        pointer {
-            bindings = <
-&trans  &trans         &trans            &trans    &trans     &kp C_AC_SCROLL_UP                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans         &mkp RCLK         &mkp MB3  &mkp LCLK  &kp C_AC_SCROLL_DOWN                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp C_AC_BACK  &kp C_AC_FORWARD  &mo 5     &trans     &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
-                       &trans            &trans
-                                                   &trans     &trans                &trans    &trans  &trans  &trans
-                                                   &trans     &bootloader                             &trans  &trans
             >;
         };
 
