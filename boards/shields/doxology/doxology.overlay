@@ -8,6 +8,10 @@
 #include "trackball.dtsi"
 
 / {
+    zephyr_udc0: &usbd {
+        status = "okay";
+    };
+    
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
