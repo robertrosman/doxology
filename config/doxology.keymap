@@ -59,8 +59,6 @@
         device = <&trackball>;
         layers = <4>;
         evt-type = <INPUT_EV_REL>;
-        scale-multiplier = <1>;
-        scale-divisor = <8>;
 
         /* slienting x-axis with alt event code */
 
