@@ -69,17 +69,19 @@
 
         y-invert;
 
-        /* align to CCW 45 degree */
-        /* rotate-deg = <315>; */
-        /* NOTE 1: This settings do not compitable with y-invert and x-invert */
-        /* NOTE 2: Floating point computation requires alot of ram. */
-        /*         This feature will cuase stackove flow with CONFIG_ZMK_USB_LOGGING=y */
-        /* bind a behavior to down scaling input value to (1/1024) */
-        /* NOTE: This behavior is different to scale-divisor. */
-        /*       The delta value is accumlated until result >= 1 after cast. */
-        /*       The scrolling is preented in hi-res and allow precise scrolling */
-
         bindings = <&ib_wheel_scaler 1 50>, <&ib_misc_scaler 0 0>;
+    };
+
+    tb0_mhsl_ibl {
+        compatible = "zmk,input-behavior-listener";
+        device = <&trackball>;
+        layers = <5>;
+        evt-type = <INPUT_EV_REL>;
+
+        x-input-code = <INPUT_REL_HWHEEL>;
+        y-input-code = <INPUT_REL_MISC>;
+
+        bindings = <&ib_hwheel_scaler 1 50>, <&ib_misc_scaler 0 0>;
     };
 
     /* define a resolution down scaler only for INPUT_REL_WHEEL */
@@ -96,6 +98,13 @@
         #binding-cells = <2>;
         evt-type = <INPUT_EV_REL>;
         input-code = <INPUT_REL_MISC>;
+    };
+
+    ib_hwheel_scaler: ib_hwheel_scaler {
+        compatible = "zmk,input-behavior-scaler";
+        #binding-cells = <2>;
+        evt-type = <INPUT_EV_REL>;
+        input-code = <INPUT_REL_HWHEEL>;
     };
 
     /* END input behaviour for trackball */
@@ -118,7 +127,7 @@
             bindings = <
 &kp LA(TAB)      &trans         &trans            &trans    &trans     &trans                             &kp COMMA        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &trans
 &kp LA(LS(TAB))  &trans         &mkp RCLK         &mkp MB3  &mkp LCLK  &kp PAUSE_BREAK                    &kp DOT          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans
-&trans           &kp C_AC_BACK  &kp C_AC_FORWARD  &mo 4     &trans     &kp SYSREQ                         &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans
+&trans           &kp C_AC_BACK  &kp C_AC_FORWARD  &mo 4     &mo 5      &kp SYSREQ                         &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans
                                 &trans            &trans
                                                             &trans     &trans           &trans    &trans  &trans           &kp KP_NUMBER_0
                                                             &trans     &bootloader                        &trans           &trans
@@ -148,6 +157,17 @@
         };
 
         pointer_scroll {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans
+                                &trans  &trans  &trans    &trans  &trans  &trans
+                                &trans  &trans                    &trans  &trans
+            >;
+        };
+
+        pointer_horizontal_scroll {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
