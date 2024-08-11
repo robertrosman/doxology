@@ -54,7 +54,7 @@
 
     /* input config for mouse scroll mode on momentary mouse scroll layer */
 
-    tb0_msl_ibl {
+    tb0_mvsl_ibl {
         compatible = "zmk,input-behavior-listener";
         device = <&trackball>;
         layers = <4>;
@@ -83,6 +83,23 @@
 
         bindings = <&ib_hwheel_scaler 1 50>, <&ib_misc_scaler 0 0>;
     };
+
+    tb0_msl_ibl {
+        compatible = "zmk,input-behavior-listener";
+        device = <&trackball>;
+        layers = <6>;
+        evt-type = <INPUT_EV_REL>;
+
+        x-input-code = <INPUT_REL_HWHEEL>;
+        y-input-code = <INPUT_REL_WHEEL>;
+
+        /* invert scrolling direction */
+
+        y-invert;
+
+        bindings = <&ib_wheel_scaler 1 50>, <&ib_hwheel_scaler 1 50>;
+    };
+
 
     /* define a resolution down scaler only for INPUT_REL_WHEEL */
 
@@ -156,7 +173,7 @@
             >;
         };
 
-        pointer_scroll {
+        pointer_vertical_scroll {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
@@ -176,6 +193,26 @@
                                 &trans  &trans  &trans    &trans  &trans  &trans
                                 &trans  &trans                    &trans  &trans
             >;
+        };
+
+        pointer_all_scroll {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans
+                                &trans  &trans  &trans    &trans  &trans  &trans
+                                &trans  &trans                    &trans  &trans
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        scroll_all {
+            if-layers = <4 5>;
+            then-layer = <6>;
         };
     };
 };
