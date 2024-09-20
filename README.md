@@ -3,6 +3,9 @@ Doxology keyboard
 
 An ergonomic keyboard based on Dactyl manuform.
 
+![Doxology front](images/front.jpg)
+![Doxology trackball](images/trackball.jpg)
+
 ## Design goals
 
 When designing Doxology, I had the following criterias in mind:
